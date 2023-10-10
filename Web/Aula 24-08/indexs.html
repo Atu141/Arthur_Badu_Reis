@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aula 04 - Grid</title>
+    <!-- ícone da aba browser -->
+    <link rel="shortcut icon" href="./img/robot.svg" type="image/x-icon">
+
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <!-- BS Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Link Css BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- minha CSS -->
+    <link rel="stylesheet" href="./css/styless.css">
+
+</head>
+
+<body>
+    <header class="container mt-4">
+        <!-- Menu Princiapal -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-menu" href="#">
+                    <i class="bi bi-robot"></i>
+                    Robo Cup</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-text-right btn-sanduiche"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- conteudo Princiapal -->
+    <main class="container mb-4 p-5">
+
+        <section class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-3 text-blue">1SIPI</h1>
+                <p class="lead my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat <span
+                        class="text-blue">provident soluta</span> numquam veniam
+                    doloremque neque fugiat vero, perferendis mollitia quas!</p>
+                <a href="" class="btn btn-outline-dark">Mais Infprmações <i
+                        class="bi bi-arrow-down-circle-fill ms-1 position-icon"></i></a>
+            </div>
+
+            <figure class="col-md-6">
+                <img src="./img/chat-bot-animate.svg" alt="Imagem de uma Robo" class="img-fluid">
+            </figure>
+        </section>
+
+        <!-- tabela -->
+        <section class="mb-4 table-responsive">
+            <h2 class="text-blue">Datas dos conforntos</h2>
+
+            <table class="table table-bordered table-striped table-hover text-center">
+                <!-- cabçalho -->
+                <thead class="table-primary">
+                    <tr>
+                        <th>Robô</th>
+                        <th>Equipe</th>
+                        <th>Sala</th>
+                        <th>Arma</th>
+                        <th>Data da Luta</th>
+                        <th>Local da Luta</th>
+                    </tr>
+                </thead>
+                <!-- corpo da Tabela  -->
+                <tbody>
+                    <tr>
+                        <td>Pedrão</td>
+                        <td>Os Pedreiros</td>
+                        <td>1SIPIZ</td>
+                        <td>Mareta</td>
+                        <td>23/09/2023</td>
+                        <td>lins</td>
+                    </tr>
+
+                    <tr>
+                        <td>Acéfalos</td>
+                        <td>Boston</td>
+                        <td>1SIPX</td>
+                        <td>Laça Chamas</td>
+                        <td>30/09/2023</td>
+                        <td>lins</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pedrão</td>
+                        <td>Os Pedreiros</td>
+                        <td>1SIPIZ</td>
+                        <td>Mareta</td>
+                        <td>23/09/2023</td>
+                        <td>lins</td>
+                    </tr>
+
+                    <tr>
+                        <td>Acéfalos</td>
+                        <td>Boston</td>
+                        <td>1SIPX</td>
+                        <td>Laça Chamas</td>
+                        <td>30/09/2023</td>
+                        <td>lins</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pedrão</td>
+                        <td>Os Pedreiros</td>
+                        <td>1SIPIZ</td>
+                        <td>Mareta</td>
+                        <td>23/09/2023</td>
+                        <td>lins</td>
+                    </tr>
+
+                    <tr>
+                        <td>Acéfalos</td>
+                        <td>Boston</td>
+                        <td>1SIPX</td>
+                        <td>Laça Chamas</td>
+                        <td>30/09/2023</td>
+                        <td>lins</td>
+                    </tr>
+                </tbody>
+                <!-- Rodapé da Tabela  -->
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Dados atualizados: 17/08/2023</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section class="my-4 row">
+            <h2 class="text-blue mb-3">Melhores Robos</h2>
+            <!-- 1°card -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./img/pexels-alex-knight-2599244.jpg" class="card-img-top"
+                        alt=" Imagem do robo filho do Chuck">
+                    <div class="card-body">
+                        <h5 class="card-title">Robo Filho do Chuck</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, rerum
+                            voluptas.</p>
+                        <a href="#" class="btn btn-outline-primary">Galeria de Imagens</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 2°card -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./img/pexels-kindel-media-8566473.jpg" class="card-img-top" alt=" Imagem do robo Atom v2">
+                    <div class="card-body">
+                        <h5 class="card-title">Robo Atom v2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, rerum
+                            voluptas.</p>
+                        <a href="#" class="btn btn-outline-primary">Galeria de Imagens</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 3°card -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./img/pexels-pavel-danilyuk-8294560.jpg" class="card-img-top"
+                        alt=" Imagem do robo Kratos">
+                    <div class="card-body">
+                        <h5 class="card-title">Robo Kratos</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, rerum
+                            voluptas.</p>
+                        <a href="#" class="btn btn-outline-primary">Galeria de Imagens</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 4°card -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./img/pexels-pavel-danilyuk-8294622.jpg" class="card-img-top" alt=" Imagem do robo Ares">
+                    <div class="card-body">
+                        <h5 class="card-title">Robo Ares</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, rerum
+                            voluptas.</p>
+                        <a href="#" class="btn btn-outline-primary">Galeria de Imagens</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="text-blue mb-3">Galeria de Iamgens</h2>
+        <section class="row my-4 d-flex align-items-center">
+
+            <div class="col-md-6 my-2">
+                <img src="./img/pexels-alex-knight-2599244.jpg" alt="imagme do Robô 1" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="./img/pexels-alex-knight-2599244.jpg" alt="imagem de um Robô" class="img-fluid rounded my-2">
+                    </div>
+                    <div class="col-6">
+                        <img src="./img/pexels-kindel-media-8566473.jpg" alt="imagem de um Robô" class="img-fluid rounded my-2">
+                    </div>
+                    <div class="col-6">
+                        <img src="./img/pexels-pavel-danilyuk-8294560.jpg" alt="imagem de um Robô" class="img-fluid rounded my-2">
+                    </div>
+                    <div class="col-6">
+                        <img src="./img/pexels-pavel-danilyuk-8294622.jpg" alt="imagem de um Robô" class="img-fluid rounded my-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Link Js BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

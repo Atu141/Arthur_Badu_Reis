@@ -1,0 +1,41 @@
+:root {
+    --color-blue: #336699;
+    --color-pink: #dc143c;
+    --font-body: 'Catamaran', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+.text-blue {
+    color: var(--color-blue);
+}
+
+.text-pink {
+    color: #dc143c;
+}
+
+.position-icon {
+    position: relative;
+    top: 2px;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+}
+
+.logo {
+    color: var(--color-blue);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.nav-link:hover {
+    color: var(--color-blue);
+}
+
+textarea{
+    resize: none;
+    height: 150px;
+}

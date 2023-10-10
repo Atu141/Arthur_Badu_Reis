@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aula 04 - Mais Grid - Link - Formulário</title>
+
+    <link rel="shortcut icon" href="./images/robot.svg" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Icons BS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- chamada da CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Minha CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <main class="container">
+        <nav class="navbar navbar-expand-lg mt-4">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#">
+                    <i class="bi bi-robot me-1"></i>
+                    Robocup
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-text-right"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#evento">Evento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#combates">Combates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#robos">Robôs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galeria de Imagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <article class="row rounded-2 mb-4 p-4 d-flex align-items-center" id="evento">
+            <section class="col-md-6">
+                <h1 class="display-4 text-blue">1SIPI</h1>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                    <span class="text-pink">
+                        pariatur enim laudantium fugit
+                    </span>
+                    repudiandae praesentium iste?
+                </p>
+                <a href="" class="btn btn-outline-dark">Mais informações <i
+                        class="bi bi-arrow-down-circle ms-1 position-icon"></i></a>
+            </section>
+
+            <figure class="col-md-6">
+                <img src="./images/chat-bot-animate.svg" alt="Imagem de um chatBot" class="img-fluid">
+            </figure>
+        </article>
+
+        <!-- tabela -->
+        <section class="mb-4 table-responsive" id="combates">
+            <h2 class="text-blue mb-3">Equipes da Robocup</h2>
+
+            <table class="table table-hover table-striped text-center">
+                <!-- cabeçalho -->
+                <thead class="table-primary">
+                    <tr>
+                        <th>Nome do Robô</th>
+                        <th>Nome da Equipe</th>
+                        <th>Sala</th>
+                        <th>Num. Integrantes</th>
+                        <th>Arma</th>
+                        <th>Data da Luta</th>
+                        <th>Local</th>
+                    </tr>
+                </thead>
+
+                <!-- corpo -->
+                <tbody>
+                    <tr>
+                        <td>Pedrão</td>
+                        <td>Os Pedreiros</td>
+                        <td>1SIPZ</td>
+                        <td>5</td>
+                        <td>Marreta</td>
+                        <td>23/09/2023</td>
+                        <td>Lins</td>
+                    </tr>
+
+                    <tr>
+                        <td>Astron</td>
+                        <td>Zênite</td>
+                        <td>1SIPH</td>
+                        <td>5</td>
+                        <td>Big & Bang</td>
+                        <td>30/09/2023</td>
+                        <td>Lins</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sem Nome</td>
+                        <td>Talon</td>
+                        <td>1SIPH</td>
+                        <td>5</td>
+                        <td>Porrete</td>
+                        <td>30/09/2023</td>
+                        <td>Lins</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sem Nome</td>
+                        <td>Talon</td>
+                        <td>1SIPH</td>
+                        <td>5</td>
+                        <td>Porrete</td>
+                        <td>30/09/2023</td>
+                        <td>Lins</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sem Nome</td>
+                        <td>Talon</td>
+                        <td>1SIPH</td>
+                        <td>5</td>
+                        <td>Porrete</td>
+                        <td>30/09/2023</td>
+                        <td>Lins</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sem Nome</td>
+                        <td>Talon</td>
+                        <td>1SIPH</td>
+                        <td>5</td>
+                        <td>Porrete</td>
+                        <td>30/09/2023</td>
+                        <td>Lins</td>
+                    </tr>
+                </tbody>
+
+                <!-- rodapé da tabela -->
+                <tfoot class="table-primary">
+                    <tr>
+                        <td colspan="7">Dados atualizados: 17/08/2023</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- cards -->
+        <section class="row my-4" id="robos">
+            <h2 class="text-blue mb-4">Melhores Robôs</h2>
+
+            <!-- 1o.robo -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/pexels-kindel-media-8566472.jpg" class="card-img-top" alt="Imagem do Robô XPTO">
+                    <div class="card-body">
+                        <h5 class="card-title">Robô XPTO</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, suscipit
+                            atque.</p>
+                        <a href="#" class="btn btn-outline-primary">Galeria de Imagens</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2o.robo -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/pexels-kindel-media-8982672.jpg" class="card-img-top" alt="Imagem do Robô ABCD">
+                    <div class="card-body">
+                        <h5 class="card-title">Robô ABCD</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, suscipit
+                            atque.</p>
+                        <a href="#" class="btn btn-outline-primary">Galeria de Imagens</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3o.robo -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/pexels-lj-2085831.jpg" class="card-img-top" alt="Imagem do Robô XCVB">
+                    <div class="card-body">
+                        <h5 class="card-title">Robô XCVB</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, suscipit
+                            atque.</p>
+                        <a href="#" class="btn btn-outline-primary">Galeria de Imagens</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4o.robo -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/pexels-maxime-lecomte-13471116.jpg" class="card-img-top"
+                        alt="Imagem do Robô QWER">
+                    <div class="card-body">
+                        <h5 class="card-title">Robô QWER</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, suscipit
+                            atque.</p>
+                        <a href="#" class="btn btn-outline-primary">Galeria de Imagens</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-blue my-4" id="galeria">Galeria de Imagens</h2>
+
+            <div class="row d-flex align-items-center justify-content-center">
+
+                <div class="col-md-6 my-2">
+                    <img src="./images/pexels-kindel-media-8566472.jpg" alt="Imagem do robô ASDF"
+                        class="img-fluid rounded">
+                </div>
+
+                <div class="col-md-6 my-2">
+                    <div class="row">
+                        <div class="col-6 my-2">
+                            <img src="./images/pexels-kindel-media-8566472.jpg" alt="Imagem do robo Astor"
+                                class="img-fluid rounded">
+                        </div>
+                        <div class="col-6 my-2">
+                            <img src="./images/pexels-kindel-media-8982672.jpg" alt="Imagem do robo Astor"
+                                class="img-fluid rounded">
+                        </div>
+                        <div class="col-6 my-2">
+                            <img src="./images/pexels-lj-2085831.jpg" alt="Imagem do robo Astor"
+                                class="img-fluid rounded">
+                        </div>
+                        <div class="col-6 my-2">
+                            <img src="./images/pexels-maxime-lecomte-13471116.jpg" alt="Imagem do robo Astor"
+                                class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Formularios -->
+        <section>
+            <h2 class="text-blue mb-4">Contato</h2>
+
+            <form id="contato" name="contato" method="get" action="">
+
+                <div class="row">
+
+                    <div class="col-md-4 my-4">
+                        <Label for="nome" class="form-label">Nome</Label>
+                        <input type="password" id="nome" name="nome" class="form-control"
+                            placeholder="Ex: Fulano de Tal" minlength="10" maxlength="70" required>
+                    </div>
+
+                    <div class="col-md-4 my-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Ex: seuemail2gmail.com"
+                            class="form-control" required>
+                    </div>
+
+                    <div class="col-md-4 my-4">
+                        <label for="assunto" class="form-label">Assunto</label>
+                        <select name="assunto" id="assunto" class="form-select">
+                            <option value="0" disabled selected>Selecione o Assunto</option>
+                            <option value="1">Faze um Elogio</option>
+                            <option value="2">Falar com a Parede</option>
+                            <option value="3">Tirar uma Duvida</option>
+                            <option value="4">Outros</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-12 my-4">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" class="form-control"
+                            placeholder="Ex: Sua Mensagem"></textarea>
+                    </div>
+
+                    <div class="d-flex justify-content-end my-3">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- chamada do JS do BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

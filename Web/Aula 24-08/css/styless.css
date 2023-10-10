@@ -1,0 +1,40 @@
+:root{
+    --color-blue: #336699;
+    --color-pink: #dc143c;
+    --font-body: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: var(--font-body);
+}
+
+.text-blue{
+    color: var(--color-blue);
+}
+
+.position-icon{
+    position: relative;
+    top: 1px;
+}
+
+.logo-menu{
+    font-size: 27px;
+    color: var(--color-blue);
+    font-weight: 700;
+}
+.nav-link{
+    font-weight: 600;
+}
+
+.nav-link:hover, .logo-menu:hover{
+    color: var(--color-blue);
+}
+
+.navbar-toggler{
+    box-shadow: none !important;
+}
+
+.btn-sanduiche{
+    color: var(--color-blue);
+    font-weight: 800;
+}
