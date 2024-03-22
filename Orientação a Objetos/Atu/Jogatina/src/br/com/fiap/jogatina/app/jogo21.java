@@ -12,7 +12,7 @@ public class jogo21 {
 		b.embaralhar();
 		
 		Jogador j1 = new Jogador(b.comprar(), b.comprar());
-		Jogador j2 = new Jogador(b.comprar(), b.comprar());
+		JogadorCPU j2 = new JogadorCPU(b.comprar(), b.comprar());
 		
 		while(j1.querCarta()) {
 			Carta c = b.comprar();
