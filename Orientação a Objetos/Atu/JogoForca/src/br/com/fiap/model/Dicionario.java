@@ -1,6 +1,5 @@
 package br.com.fiap.model;
 
-
 import java.util.Random;
 
 public class Dicionario {
@@ -34,3 +33,4 @@ public class Dicionario {
            System.out.println(dic.getPalavra());
     }
 }
+
