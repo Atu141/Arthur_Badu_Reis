@@ -30,6 +30,7 @@ public class jogo {
 		}else {
 			System.out.println("===============================");
 			System.out.println("Parabéns você ganhou");
+			System.out.println(f.getPalavraAberta());
 			System.out.println("===============================");
 		}
 	}

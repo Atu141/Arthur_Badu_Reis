@@ -33,4 +33,3 @@ public class Dicionario {
            System.out.println(dic.getPalavra());
     }
 }
-
