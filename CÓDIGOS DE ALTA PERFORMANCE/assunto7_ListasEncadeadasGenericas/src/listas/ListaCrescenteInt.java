@@ -38,11 +38,54 @@ public class ListaCrescenteInt {
 		}
 	}
 
+	public boolean remove(int valor) {
+		boolean achou = false;
+		if(!isEmpty()) {
+			if(valor == lista.dado) {
+				lista = lista.prox;
+				achou=true;
+			}else {
+				NO aux = lista;
+				while (aux.prox!=null&& !achou) {
+					if(aux.prox.dado!=valor)
+						aux = aux.prox;
+					else {
+						achou = true;
+					}
+				}
+				if(achou)
+					aux.prox = aux.prox.prox;
+			}
+		}
+		return achou;
+	}
+	
+	public int contaNos() {
+		int qtd = 0;
+		NO aux = lista;
+		while (aux!=null) {
+			qtd++;
+			aux = aux.prox;
+		}
+		return qtd;
+	}
+	
 	public void show() {
 		NO aux = lista;
 		System.out.println("********* Lista **********");
 		while (aux!=null) {
 			System.out.print(aux.dado + "\t");
+			aux = aux.prox;
+		}
+		System.out.println();
+	}
+	
+	public void showGrates(int limite) {
+		NO aux = lista;
+		System.out.println("********** Lista de Valores acima de " + limite + "************");
+		while(aux !=null) {
+			if(aux.dado > limite) 
+				System.out.println(aux.dado + "\t");
 			aux = aux.prox;
 		}
 		System.out.println();
